@@ -15,11 +15,12 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
+      adapter: postgresql
+      encoding: unicode
+      pool: 5
+      username: 'markg'
+      password: 'overtimepassword'
+      host:     <%= ENV['IP'] %>
 
 development:
   <<: *default
@@ -81,5 +82,3 @@ test:
 production:
   <<: *default
   database: Overtime_production
-  username: Overtime
-  password: <%= ENV['OVERTIME_DATABASE_PASSWORD'] %>
