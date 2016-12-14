@@ -16,3 +16,13 @@ x AdminUser -> STI
 
 ## UI:
 - Bootstrap -> formatting
+
+## Starting PostgreSQL
+'''
+sudo service postgresql start
+'''
+
+## Starting Rails Server
+'''
+rails s -b $IP -p $PORT
+'''
