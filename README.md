@@ -23,6 +23,12 @@
 ## Refactor TODOS:
 - Refactor user association integration test in post_spec
 
+## Approval workflow TODOS
+- Add status to posts
+- Make status required
+- Implement approval stages
+- locking
+
 
 ## Starting PostgreSQL
 ```
